@@ -28,7 +28,7 @@ module.exports = {
                 secure: true,
                 auth: {
                     type: 'OAuth2',
-                    user: 'mintae0424@gmail.com',
+                    user: process.env.MY_EMAIL,
                     clientId: process.env.CLIENT_ID,
                     clientSecret: process.env.CLIENT_SECRET,
                     refreshToken: process.env.REFRESH_TOKEN,
