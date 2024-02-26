@@ -3,9 +3,8 @@ var router = express.Router();
 
 let contactController = require('./controllers/contactController')
 
-/* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+    res.send('respond with a resource');
 });
 
 router.post('/contact', function(req, res,next){
@@ -26,6 +25,7 @@ router.post('/contact', function(req, res,next){
             res.json(result)
         })
         .catch( error => {
+            console.log(error)
             res.json(error)
         })
 })
